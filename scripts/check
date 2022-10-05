@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+set -e
+set -x
+
+mypy pythontemplate
+flake8 pythontemplate tests
+black pythontemplate tests --check
+isort pythontemplate tests --check-only

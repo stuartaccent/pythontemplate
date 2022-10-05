@@ -1,0 +1,5 @@
+#!/bin/sh -e
+set -x
+
+pip install flit
+flit install --extra dev,test
